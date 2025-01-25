@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+      }
+
+      .section {
+        display: flex;
+        border: 2px solid;
+        padding: 10px;
+      }
+      .section img {
+        width: 100px;
+        padding: 8px;
+      }
+      .section-1 {
+        flex-direction: row;
+      }
+
+      .section-2 {
+        flex-direction: row;
+        justify-content: center;
+      }
+
+      .section-3 {
+        flex-direction: row-reverse;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="section section-1">
+        <img src="cat.jpg" alt="pic" />
+        <p>
+          This is a sample text. You can put whatever text you want here and it
+          will work just the same. I like cats
+        </p>
+      </div>
+      <div class="section section-2">
+        <p>
+          This is a sample text. You can put whatever text you want here and it
+          will work just the same. I like cats
+        </p>
+        <img src="cat.jpg" alt="pic" />
+        <p>
+          This is a sample text. You can put whatever text you want here and it
+          will work just the same. I like cats
+        </p>
+      </div>
+      <div class="section section-3">
+        <img src="cat.jpg" alt="pic" />
+        <p>
+          This is a sample text. You can put whatever text you want here and it
+          will work just the same. I like cats
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

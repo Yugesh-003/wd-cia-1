@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        font-family: sans-serif;
+        display: grid;
+        grid-template-rows: auto 1fr;
+        grid-template-columns: 190px 1fr 200px;
+        height: 100vh;
+      }
+      header {
+        grid-column: 1 / 4;
+        text-align: center;
+        font-size: 40px;
+      }
+      .sidebar {
+        padding: 10px;
+        border-right: 1px solid;
+      }
+      .content {
+        padding: 20px;
+      }
+      .image {
+        border-left: 1px solid #ccc;
+      }
+      img {
+        max-width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>Web page</header>
+    <div class="sidebar">
+      <h3>Sub-topics</h3>
+      <ul>
+        <li>Intro</li>
+        <li>Syntax</li>
+        <li>Data types</li>
+        <li>Numbers</li>
+        <li>Booleans</li>
+      </ul>
+    </div>
+    <div class="content">
+      <h2>Main Content</h2>
+      <p>
+        JavaScript Can Change HTML Content One of many JavaScript HTML methods
+        is getElementById(). The example below "finds" an HTML element (with
+        id="demo"), and changes the element content (innerHTML) to "Hello
+        JavaScript":
+        document.getElementById("demo").innerHTML = "Hello JavaScript";
+      </p>
+    </div>
+    <div class="image">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/640px-JavaScript-logo.png"
+        alt="picture"
+      />
+    </div>
+  </body>
+</html>
